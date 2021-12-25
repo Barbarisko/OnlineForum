@@ -35,7 +35,7 @@ namespace Web
         {
             var connection_string = Configuration.GetValue<string>("DefaultConnection");
 
-            services.RegisterDataServices("Host=localhost; Port=5432; Database=Forum; User ID=postgres; Password=dinadina; Pooling=true;"); //Add connection string;
+            services.RegisterDataServices(Configuration.GetConnectionString("DefaultConnection")); //Add connection string;
 
             services.RegisterBusinessServices();
 
