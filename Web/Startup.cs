@@ -99,8 +99,7 @@ namespace Web
 
             app.UseRouting();
 
-            app.UseCors(AllowSpecificOrigins);
-
+            app.UseCors(builder => builder.AllowAnyOrigin());
             app.UseAuthentication();
 
             app.UseAuthorization();
