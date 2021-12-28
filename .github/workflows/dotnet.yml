@@ -29,5 +29,12 @@ jobs:
     - name: Test
       run: dotnet test --verbosity normal
 
-    - name: dotnet publish
-      run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
+    - name: Create Docker Image
+      run: docker build -t forum .
+
+    - name: 'Upload Artifact'
+      uses: actions/upload-artifact@v2
+      with:
+        name: my-artifact
+        path: my_file.txt
+        retention-days: 5
