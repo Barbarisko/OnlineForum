@@ -1,6 +1,10 @@
 # OnlineForum
 Course 4 Final Work for Components of Programming Supplements
 
+FOR DB:
+docker run --name online_forum -e POSTGRES_PASSWORD=postgres -d postgres
+
+FOR BACKEND:
 To create docker image, in root folder use this command:
 
 	docker build -t forum .

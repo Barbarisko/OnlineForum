@@ -85,17 +85,17 @@ namespace DAL.Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "7cb71a15-b7c9-4aaa-9e76-325ecb027a64",
+                            Id = "50bb70ff-709e-4e5e-affb-741aa0cd52b1",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "0c4c51a3-2065-4ae1-8ef1-c198c7ec8ed7",
+                            ConcurrencyStamp = "a82ff939-4df2-47ef-92fc-a0c04a17a479",
                             Email = "dinaiovcheva@gmail.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "DINAIOVCHEVA@GMAIL.COM",
                             NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAEAACcQAAAAEOsgapqeyamfMa/LlYcJ2KVa9jjbtKvcVEZ6M8SsQ4p6hP7IxEsDqQwwHpKqIBl4SQ==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEBLK27N7ClqZfECWV022YE+MQ8NwSJWsfhdo5SC0c6QU+blbzdTsTMwDBCjfoR/MrA==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "23e4ab69-590c-4ceb-bd65-763b8986a59e",
+                            SecurityStamp = "1643d6a5-2ef4-4563-acac-74df37fe6e0f",
                             TwoFactorEnabled = false,
                             UserName = "admin"
                         });
@@ -163,7 +163,7 @@ namespace DAL.Infrastructure.Migrations
                         {
                             Id = 1,
                             Content = "First reply to thread",
-                            PostDate = new DateTime(2021, 12, 25, 17, 48, 6, 16, DateTimeKind.Local).AddTicks(9037),
+                            PostDate = new DateTime(2021, 12, 26, 18, 26, 28, 285, DateTimeKind.Local).AddTicks(3728),
                             ThreadId = 1,
                             UserProfileId = 1
                         },
@@ -171,7 +171,7 @@ namespace DAL.Infrastructure.Migrations
                         {
                             Id = 2,
                             Content = "Reply to first reply to thread",
-                            PostDate = new DateTime(2021, 12, 25, 17, 48, 6, 16, DateTimeKind.Local).AddTicks(9637),
+                            PostDate = new DateTime(2021, 12, 26, 18, 26, 28, 285, DateTimeKind.Local).AddTicks(4407),
                             RepliedPostId = 1,
                             ThreadId = 1,
                             UserProfileId = 1
@@ -180,7 +180,7 @@ namespace DAL.Infrastructure.Migrations
                         {
                             Id = 3,
                             Content = "Reply to second thread",
-                            PostDate = new DateTime(2021, 12, 25, 17, 48, 6, 16, DateTimeKind.Local).AddTicks(9851),
+                            PostDate = new DateTime(2021, 12, 26, 18, 26, 28, 285, DateTimeKind.Local).AddTicks(5748),
                             ThreadId = 2,
                             UserProfileId = 1
                         });
@@ -228,7 +228,7 @@ namespace DAL.Infrastructure.Migrations
                             Id = 1,
                             Content = "Some content",
                             IsOpen = true,
-                            ThreadOpenedDate = new DateTime(2021, 12, 25, 17, 48, 6, 16, DateTimeKind.Local).AddTicks(7873),
+                            ThreadOpenedDate = new DateTime(2021, 12, 26, 18, 26, 28, 285, DateTimeKind.Local).AddTicks(2047),
                             Title = "Test thread 1",
                             TopicId = 101,
                             UserProfileId = 1
@@ -238,7 +238,7 @@ namespace DAL.Infrastructure.Migrations
                             Id = 2,
                             Content = "Some content two",
                             IsOpen = true,
-                            ThreadOpenedDate = new DateTime(2021, 12, 25, 17, 48, 6, 16, DateTimeKind.Local).AddTicks(8355),
+                            ThreadOpenedDate = new DateTime(2021, 12, 26, 18, 26, 28, 285, DateTimeKind.Local).AddTicks(2649),
                             Title = "Test thread two",
                             TopicId = 101,
                             UserProfileId = 1
@@ -300,10 +300,10 @@ namespace DAL.Infrastructure.Migrations
                         new
                         {
                             Id = 1,
-                            ApplicationUserId = "7cb71a15-b7c9-4aaa-9e76-325ecb027a64",
+                            ApplicationUserId = "50bb70ff-709e-4e5e-affb-741aa0cd52b1",
                             IsActive = true,
                             Rating = 1000,
-                            RegistrationDate = new DateTime(2021, 12, 25, 17, 48, 6, 14, DateTimeKind.Local).AddTicks(5237)
+                            RegistrationDate = new DateTime(2021, 12, 26, 18, 26, 28, 281, DateTimeKind.Local).AddTicks(9691)
                         });
                 });
 
@@ -335,8 +335,8 @@ namespace DAL.Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "c4981154-1928-46e0-b59a-aee4563784f8",
-                            ConcurrencyStamp = "0e1c2500-c409-4914-95d7-55cfa125ebc0",
+                            Id = "a0e8fee6-2509-42af-a96f-2085d7ce92e5",
+                            ConcurrencyStamp = "23cc095b-496d-451e-bb4e-747552eeccd0",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         });
@@ -429,8 +429,8 @@ namespace DAL.Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = "7cb71a15-b7c9-4aaa-9e76-325ecb027a64",
-                            RoleId = "c4981154-1928-46e0-b59a-aee4563784f8"
+                            UserId = "50bb70ff-709e-4e5e-affb-741aa0cd52b1",
+                            RoleId = "a0e8fee6-2509-42af-a96f-2085d7ce92e5"
                         });
                 });
 

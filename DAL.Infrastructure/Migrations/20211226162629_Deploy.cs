@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace DAL.Infrastructure.Migrations
 {
-    public partial class Test : Migration
+    public partial class Deploy : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -25,59 +25,59 @@ namespace DAL.Infrastructure.Migrations
             migrationBuilder.InsertData(
                 table: "AspNetRoles",
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
-                values: new object[] { "c4981154-1928-46e0-b59a-aee4563784f8", "0e1c2500-c409-4914-95d7-55cfa125ebc0", "Admin", "ADMIN" });
+                values: new object[] { "a0e8fee6-2509-42af-a96f-2085d7ce92e5", "23cc095b-496d-451e-bb4e-747552eeccd0", "Admin", "ADMIN" });
 
             migrationBuilder.InsertData(
                 table: "AspNetUsers",
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
-                values: new object[] { "7cb71a15-b7c9-4aaa-9e76-325ecb027a64", 0, "0c4c51a3-2065-4ae1-8ef1-c198c7ec8ed7", "dinaiovcheva@gmail.com", true, false, null, "DINAIOVCHEVA@GMAIL.COM", "ADMIN", "AQAAAAEAACcQAAAAEOsgapqeyamfMa/LlYcJ2KVa9jjbtKvcVEZ6M8SsQ4p6hP7IxEsDqQwwHpKqIBl4SQ==", null, false, "23e4ab69-590c-4ceb-bd65-763b8986a59e", false, "admin" });
+                values: new object[] { "50bb70ff-709e-4e5e-affb-741aa0cd52b1", 0, "a82ff939-4df2-47ef-92fc-a0c04a17a479", "dinaiovcheva@gmail.com", true, false, null, "DINAIOVCHEVA@GMAIL.COM", "ADMIN", "AQAAAAEAACcQAAAAEBLK27N7ClqZfECWV022YE+MQ8NwSJWsfhdo5SC0c6QU+blbzdTsTMwDBCjfoR/MrA==", null, false, "1643d6a5-2ef4-4563-acac-74df37fe6e0f", false, "admin" });
 
             migrationBuilder.UpdateData(
                 table: "Posts",
                 keyColumn: "Id",
                 keyValue: 1,
                 column: "PostDate",
-                value: new DateTime(2021, 12, 25, 17, 48, 6, 16, DateTimeKind.Local).AddTicks(9037));
+                value: new DateTime(2021, 12, 26, 18, 26, 28, 285, DateTimeKind.Local).AddTicks(3728));
 
             migrationBuilder.UpdateData(
                 table: "Posts",
                 keyColumn: "Id",
                 keyValue: 2,
                 column: "PostDate",
-                value: new DateTime(2021, 12, 25, 17, 48, 6, 16, DateTimeKind.Local).AddTicks(9637));
+                value: new DateTime(2021, 12, 26, 18, 26, 28, 285, DateTimeKind.Local).AddTicks(4407));
 
             migrationBuilder.UpdateData(
                 table: "Posts",
                 keyColumn: "Id",
                 keyValue: 3,
                 column: "PostDate",
-                value: new DateTime(2021, 12, 25, 17, 48, 6, 16, DateTimeKind.Local).AddTicks(9851));
+                value: new DateTime(2021, 12, 26, 18, 26, 28, 285, DateTimeKind.Local).AddTicks(5748));
 
             migrationBuilder.UpdateData(
                 table: "Threads",
                 keyColumn: "Id",
                 keyValue: 1,
                 column: "ThreadOpenedDate",
-                value: new DateTime(2021, 12, 25, 17, 48, 6, 16, DateTimeKind.Local).AddTicks(7873));
+                value: new DateTime(2021, 12, 26, 18, 26, 28, 285, DateTimeKind.Local).AddTicks(2047));
 
             migrationBuilder.UpdateData(
                 table: "Threads",
                 keyColumn: "Id",
                 keyValue: 2,
                 column: "ThreadOpenedDate",
-                value: new DateTime(2021, 12, 25, 17, 48, 6, 16, DateTimeKind.Local).AddTicks(8355));
+                value: new DateTime(2021, 12, 26, 18, 26, 28, 285, DateTimeKind.Local).AddTicks(2649));
 
             migrationBuilder.InsertData(
                 table: "AspNetUserRoles",
                 columns: new[] { "RoleId", "UserId" },
-                values: new object[] { "c4981154-1928-46e0-b59a-aee4563784f8", "7cb71a15-b7c9-4aaa-9e76-325ecb027a64" });
+                values: new object[] { "a0e8fee6-2509-42af-a96f-2085d7ce92e5", "50bb70ff-709e-4e5e-affb-741aa0cd52b1" });
 
             migrationBuilder.UpdateData(
                 table: "UserProfiles",
                 keyColumn: "Id",
                 keyValue: 1,
                 columns: new[] { "ApplicationUserId", "RegistrationDate" },
-                values: new object[] { "7cb71a15-b7c9-4aaa-9e76-325ecb027a64", new DateTime(2021, 12, 25, 17, 48, 6, 14, DateTimeKind.Local).AddTicks(5237) });
+                values: new object[] { "50bb70ff-709e-4e5e-affb-741aa0cd52b1", new DateTime(2021, 12, 26, 18, 26, 28, 281, DateTimeKind.Local).AddTicks(9691) });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -85,17 +85,17 @@ namespace DAL.Infrastructure.Migrations
             migrationBuilder.DeleteData(
                 table: "AspNetUserRoles",
                 keyColumns: new[] { "RoleId", "UserId" },
-                keyValues: new object[] { "c4981154-1928-46e0-b59a-aee4563784f8", "7cb71a15-b7c9-4aaa-9e76-325ecb027a64" });
+                keyValues: new object[] { "a0e8fee6-2509-42af-a96f-2085d7ce92e5", "50bb70ff-709e-4e5e-affb-741aa0cd52b1" });
 
             migrationBuilder.DeleteData(
                 table: "AspNetRoles",
                 keyColumn: "Id",
-                keyValue: "c4981154-1928-46e0-b59a-aee4563784f8");
+                keyValue: "a0e8fee6-2509-42af-a96f-2085d7ce92e5");
 
             migrationBuilder.DeleteData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
-                keyValue: "7cb71a15-b7c9-4aaa-9e76-325ecb027a64");
+                keyValue: "50bb70ff-709e-4e5e-affb-741aa0cd52b1");
 
             migrationBuilder.InsertData(
                 table: "AspNetRoles",

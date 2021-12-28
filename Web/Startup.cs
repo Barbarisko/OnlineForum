@@ -33,9 +33,13 @@ namespace Web
 
         public void ConfigureServices(IServiceCollection services)
         {
-            var connection_string = Configuration.GetValue<string>("DefaultConnection");
-
-            services.RegisterDataServices(Configuration.GetConnectionString("DefaultConnection")); //Add connection string;
+            var connection_string = Environment.GetEnvironmentVariable("DB_CONNECTION_STRING");
+            if (connection_string == "")
+            {
+                connection_string = Configuration.GetValue<string>("DefaultConnection");
+            }
+            Console.WriteLine(connection_string);
+            services.RegisterDataServices(connection_string); //Add connection string;
 
             services.RegisterBusinessServices();
 
@@ -99,7 +103,7 @@ namespace Web
 
             app.UseRouting();
 
-            app.UseCors(builder => builder.AllowAnyOrigin());
+            app.UseCors(builder => builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
             app.UseAuthentication();
 
             app.UseAuthorization();
